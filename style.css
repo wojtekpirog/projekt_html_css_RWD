@@ -1,6 +1,11 @@
 :root {
+  --white: #FFF;
+  --black: #000;
+  --gray: #4E4E4E;
+  --new: #e07a64;
+  --grayish-blue: #405d78;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--white);
   scroll-behavior: smooth;
 }
 
@@ -27,8 +32,8 @@ body {
 
 nav,
 footer {
-  background-color: #4e4e4e;
-  color: #fff;
+  background-color: var(--gray);
+  color: var(--white);
 }
 
 .page-header {
@@ -53,12 +58,12 @@ footer {
 .navbar-links a,
 .social-links a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   padding: 10px;
-  transition: all 0.15s;
+  transition: all 0.25s linear;
 }
 
-.navbar-links li a[disabled] {
+.navbar-links a[disabled] {
   cursor: not-allowed;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -67,7 +72,7 @@ footer {
   padding: 0;
   position: absolute;
   right: 16px;
-  background-color: #4e4e4e;
+  background-color: var(--gray);
   display: block;
   width: 50px;
   height: 45px;
@@ -75,10 +80,10 @@ footer {
   outline: none;
 }
 
-.navbar-toggler .bar {
+.navbar-toggler > div {
   width: 100%;
   height: 5px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 10px;
   margin: 8px 0;
 }
@@ -88,8 +93,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   height: calc(100vh - 50px);
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("img/Background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/Background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -102,29 +106,26 @@ footer {
 .promo {
   font-size: 36px;
   font-weight: bold;
-  margin: 30px 0;
 }
 
 .incentive {
-  height: 23.13px;
   font-size: 18px;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 30px;
+  color: var(--white);
+  margin: 30px 0;
 }
 
-.inner-background .button {
+.inner-background a {
   display: block;
-  width: 164px;
+  width: 160px;
   height: 40px;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  padding-top: 6px;
+  padding-top: 8px;
   text-decoration: none;
-  color: #fff;
-  border: 3px solid #fff;
-  transition: all 1s linear;
+  color: var(--white);
+  border: 3px solid var(--white);
+  transition: all .25s linear;
 }
 
 .company-staff_intro,
@@ -137,7 +138,7 @@ footer {
 }
 
 .company-staff_intro {
-  color: #152d41;
+  color: var(--grayish-blue);
 }
 
 .services_intro {
@@ -163,7 +164,7 @@ footer {
   align-items: center;
   text-align: justify;
   font-size: 18px;
-  color: #000;
+  color: var(--black);
 }
 
 .staff-member--image {
@@ -183,12 +184,12 @@ footer {
 }
 
 .services--container {
-  background-color: #405d78;
+  background-color: var(--grayish-blue);
   padding: 50px 0;
 }
 
 .services_intro {
-  color: #fff;
+  color: var(--white);
   margin-bottom: 50px;
 }
 
@@ -204,8 +205,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--white);
+  color: var(--black);
   width: calc(100% - 120px);
   aspect-ratio: 1;
   transition: transform 0.5s linear;
@@ -215,7 +216,7 @@ footer {
   position: absolute;
   left: -20px;
   top: -20px;
-  background-color: #e07a64;
+  background-color: var(--new);
   width: 37px;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -294,14 +295,9 @@ footer {
     width: 960px;
     margin: 0 auto;
   }
-  .navbar-links a:hover {
-    background-color: #fff;
-    color: #000;
-    border-radius: 4px;
-  }
-  .inner-background .button:hover {
-    background-color: #fff;
-    color: #000;
+  .navbar-links a:not([disabled]):hover, .inner-background a:hover {
+    background-color: var(--white);
+    color: var(--black);
   }
   .staff-member--container {
     font-size: 16px;
@@ -336,6 +332,19 @@ footer {
   }
   .service--tile:hover {
     transform: scale(1.05);
+    cursor: pointer;
+  }
+  .fa-instagram:hover {
+    color: #feda75;
+  }
+  .fa-square-facebook:hover {
+    color: #3b5998;
+  }
+  .fa-twitter:hover {
+    color: #00acee;
+  }
+  .fa-youtube:hover {
+    color: #c6302b;
   }
   .side-to-side {
     flex-direction: row;
