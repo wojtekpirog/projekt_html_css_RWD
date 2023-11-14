@@ -141,15 +141,7 @@ footer {
   color: var(--grayish-blue);
 }
 
-.services_intro {
-  font-size: 24px;
-}
-
-.specialists--container {
-  padding: 50px 0;
-}
-
-.specialists {
+.flex {
   display: flex;
   flex-direction: column;
 }
@@ -158,7 +150,7 @@ footer {
   margin: 20px;
 }
 
-.staff-member--container {
+.employee-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,7 +159,7 @@ footer {
   color: var(--black);
 }
 
-.staff-member--image {
+.staff-member-image {
   background-position: center;
   background-size: cover;
   height: 197px;
@@ -175,17 +167,16 @@ footer {
   border-radius: 50%;
 }
 
-.image-first {
-  background-image: url("https://randomuser.me/api/portraits/women/43.jpg");
-}
+.img-first {
+  background-image: url("https://randomuser.me/api/portraits/women/43.jpg");  
+} 
 
-.image-second {
-  background-image: url("https://randomuser.me/api/portraits/men/72.jpg");
-}
+.img-second {
+  background-image: url("https://randomuser.me/api/portraits/men/72.jpg");  
+} 
 
 .services--container {
   background-color: var(--grayish-blue);
-  padding: 50px 0;
 }
 
 .services_intro {
@@ -209,21 +200,24 @@ footer {
   color: var(--black);
   width: calc(100% - 120px);
   aspect-ratio: 1;
-  transition: transform 0.5s linear;
+  transition: transform .25s linear;
 }
 
-.new--circle span {
+.service--tile span {
   position: absolute;
-  left: -20px;
-  top: -20px;
+  left: -30px;
+  top: 10px;
   background-color: var(--new);
-  width: 37px;
-  aspect-ratio: 1;
-  border-radius: 50%;
+  color: var(--white);
+  transform: rotate(-45deg);
+  width: 100px;
+  text-align: center;
 }
 
-.service--tile:nth-of-type(1) {
+.service--tile:first-of-type {
   flex-direction: column;
+  border: 4px solid var(--new);
+  overflow: hidden;
 }
 
 .service-heading {
@@ -271,22 +265,14 @@ footer {
     text-align: left;
     margin-left: 20px;
   }
-  .services_intro {
-    font-size: 26px;
-  }
-  .services {
+  .grid {
     display: grid;
     grid-template-columns: repeat(2, 200px);
-    grid-gap: 60px;
+    gap: 60px;
     justify-content: center;
   }
   .service--tile {
-    width: 200px;
-  }
-  .new--circle span {
-    width: 22px;
-    left: -11px;
-    top: -12px;
+    width: 100%;
   }
 }
 
@@ -299,32 +285,32 @@ footer {
     background-color: var(--white);
     color: var(--black);
   }
-  .staff-member--container {
+  .employee-container {
     font-size: 16px;
     font-weight: normal;
   }
-  .staff-member--container h4 {
+  .employee-container h4 {
     font-weight: bold;
   }
-  .staff-member--container:nth-of-type(odd) {
+  .employee-container:nth-of-type(odd) {
     flex-direction: row;
   }
-  .staff-member--container:nth-of-type(even) {
+  .employee-container:nth-of-type(even) {
     flex-direction: row-reverse;
   }
-  .staff-member--container:nth-of-type(even) p,
-  .staff-member--container:nth-of-type(even) h4 {
+  .employee-container:nth-of-type(even) p,
+  .employee-container:nth-of-type(even) h4 {
     text-align: right;
   }
-  .staff-member--container:nth-of-type(odd) p,
-  .staff-member--container:nth-of-type(odd) h4 {
+  .employee-container:nth-of-type(odd) p,
+  .employee-container:nth-of-type(odd) h4 {
     text-align: left;
   }
   .company-staff_intro,
   .services_intro {
     margin-left: 0;
   }
-  .services {
+  .grid {
     grid-template-columns: repeat(3, 200px);
   }
   .service-heading {
