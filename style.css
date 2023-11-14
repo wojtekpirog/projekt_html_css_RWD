@@ -24,20 +24,18 @@ body {
   margin: 0 auto;
 }
 
-.side-to-side {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 nav,
 footer {
   background-color: var(--gray);
   color: var(--white);
 }
 
-.page-header {
+.navbar-and-footer {
   height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .company-name {
@@ -48,12 +46,30 @@ footer {
 
 .navbar-links {
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  /* 256px */
+  /* Było: none */
 }
 
-.navbar-links li,
-.social-links li {
-  list-style: none;
+.collapse {
+  margin: 0;
+  display: flex; 
+  background-color: var(--gray);
 }
+
+.navbar-links li {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+}
+
+/* .navbar-links li,
+.social-links li {
+  list-style: none; 
+}*/
 
 .navbar-links a,
 .social-links a {
@@ -249,6 +265,11 @@ footer {
   .container {
     width: 94%;
   }
+  .navbar-and-footer {
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .inner-background {
     width: 100%;
   }
@@ -257,6 +278,8 @@ footer {
   }
   .navbar-links {
     display: flex;
+    flex-direction: row;
+    width: 280px;
   }
   .inner-background {
     width: 50%;
@@ -331,10 +354,6 @@ footer {
   }
   .fa-youtube:hover {
     color: #c6302b;
-  }
-  .side-to-side {
-    flex-direction: row;
-    justify-content: space-between;
   }
   .page-footer {
     height: 50px;
