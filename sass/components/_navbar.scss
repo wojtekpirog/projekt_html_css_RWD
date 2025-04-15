@@ -1,0 +1,56 @@
+@use "../utils/colors" as colors;
+
+.navbar {
+  text-transform: uppercase;
+  
+  &-brand,
+  &-brand:hover,
+  .nav-link,
+  .navbar-nav .nav-link.active {
+    color: colors.$light;
+  }
+
+  &-brand {
+    font-size: 2rem;
+
+    > span {
+      color: colors.$lightblue;
+    }
+  }
+
+  .navbar-nav .nav-link.active {
+    color: colors.$lightblue;
+  }
+
+  .nav-link {
+    transition: color 200ms linear;
+
+    &:hover,
+    &:focus {
+      color: colors.$lightblue;
+    }
+  }
+
+  &-toggler {
+    padding: 1em;
+    border: 2px solid transparent;
+
+    &-flex {
+      display: flex;
+      flex-direction: column;
+      gap: 4px      
+    }
+
+    &-dash {
+      width: 25px;
+      height: 3px;
+      background-color: colors.$light;
+      border-radius: 4px;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: colors.$light;
+    }
+  }
+}

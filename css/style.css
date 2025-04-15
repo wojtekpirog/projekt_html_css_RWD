@@ -1,3 +1,58 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #fefefe;
+  font-size: 1.6rem;
+  background-color: hsl(0, 0%, 20%);
+}
+
+.navbar {
+  text-transform: uppercase;
+}
+.navbar-brand, .navbar-brand:hover,
+.navbar .nav-link,
+.navbar .navbar-nav .nav-link.active {
+  color: hsl(0, 0%, 80%);
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+.navbar-brand > span {
+  color: hsl(203, 100%, 51%);
+}
+.navbar .navbar-nav .nav-link.active {
+  color: hsl(203, 100%, 51%);
+}
+.navbar .nav-link {
+  transition: color 200ms linear;
+}
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+  color: hsl(203, 100%, 51%);
+}
+.navbar-toggler {
+  padding: 1em;
+  border: 2px solid transparent;
+}
+.navbar-toggler-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.navbar-toggler-dash {
+  width: 25px;
+  height: 3px;
+  background-color: hsl(0, 0%, 80%);
+  border-radius: 4px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  border-color: hsl(0, 0%, 80%);
 }/*# sourceMappingURL=style.css.map */
