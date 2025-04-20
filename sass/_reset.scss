@@ -7,11 +7,18 @@
 }
 
 :root {
+  --primary-font: "Primary", Arial, sans-serif;
+  --primary-light: "Primary-light", Arial, sans-serif;
+  --primary-medium: "Primary-medium", Arial, sans-serif;
+  --primary-semibold: "Primary-semibold", Arial, sans-serif;
+  --primary-bold: "Primary-bold", Arial, sans-serif;
+
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
+  font-family: var(--primary-font);
   background-color: colors.$darkbg;
 }

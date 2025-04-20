@@ -1,0 +1,9 @@
+@use "./utils/colors" as colors;
+
+.blue-text {
+  color: colors.$lightblue;
+}
+
+.container-fluid {
+  z-index: 5;
+}

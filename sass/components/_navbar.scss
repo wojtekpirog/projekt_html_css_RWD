@@ -10,12 +10,15 @@
     color: colors.$light;
   }
 
+  &-toggler,
   &-brand {
+    padding: 1em;
     font-size: 2rem;
+  }
 
-    > span {
-      color: colors.$lightblue;
-    }
+  &-brand {
+    font-family: "Primary-semibold";
+    font-size: 1.6rem;
   }
 
   .navbar-nav .nav-link.active {
@@ -23,6 +26,7 @@
   }
 
   .nav-link {
+    padding: .5em 0;
     transition: color 200ms linear;
 
     &:hover,
@@ -32,7 +36,6 @@
   }
 
   &-toggler {
-    padding: 1em;
     border: 2px solid transparent;
 
     &-flex {
