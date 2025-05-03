@@ -6,4 +6,23 @@
 
 .container-fluid {
   z-index: 5;
+  transition: background-color 300ms linear;
+}
+
+.container {
+  text-align: center;
+}
+
+.shadow-bg {
+  background-color: colors.$shadow-bg;
+}
+
+.section-title {
+  display: inline-block;
+  margin-bottom: 2em;
+  padding-bottom: .5em;
+  border-bottom: 3px solid colors.$lightblue;
+  font-family: "Primary-semibold";
+  text-align: center;
+  text-transform: uppercase;
 }

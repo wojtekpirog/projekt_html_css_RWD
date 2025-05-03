@@ -47,6 +47,7 @@
   --primary-bold: "Primary-bold", Arial, sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 61px;
 }
 
 body {
@@ -61,15 +62,39 @@ body {
 
 .container-fluid {
   z-index: 5;
+  transition: background-color 300ms linear;
+}
+
+.container {
+  text-align: center;
+}
+
+.shadow-bg {
+  background-color: hsla(0, 0%, 10%, 0.85);
+}
+
+.section-title {
+  display: inline-block;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid hsl(203, 100%, 51%);
+  font-family: "Primary-semibold";
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .navbar {
+  padding: 1em 0;
   text-transform: uppercase;
+  transition: padding 300ms linear;
 }
 .navbar-brand, .navbar-brand:hover,
 .navbar .nav-link,
 .navbar .navbar-nav .nav-link.active {
   color: hsl(0, 0%, 80%);
+}
+.navbar .navbar-nav > .nav-item:last-child > .nav-link {
+  padding-bottom: 1.5em;
 }
 .navbar-toggler, .navbar-brand {
   padding: 1em;
@@ -106,6 +131,9 @@ body {
 .navbar-toggler:focus {
   box-shadow: none;
   border-color: hsl(0, 0%, 80%);
+}
+.navbar.no-padding {
+  padding: 0;
 }
 
 .hero {
@@ -182,7 +210,27 @@ body {
   font-size: 2.6rem;
 }
 
+.about i {
+  margin: 1em 0 0.5em;
+  font-size: 30px;
+}
+.about__card-title {
+  margin-bottom: 0.5em;
+  font-size: 1.9rem;
+}
+.about__card-description {
+  font-size: 1.4rem;
+}
+@media (hover: hover) {
+  .about .text-hover-primary:hover {
+    color: var(--bs-primary);
+  }
+}
+
 @media (min-width: 320px) {
+  :root {
+    scroll-padding-top: 70px;
+  }
   .navbar-brand {
     font-size: 2rem;
   }
@@ -207,5 +255,10 @@ body {
   }
   .hero_text-subtitle {
     font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .navbar-nav > .nav-item:last-child > .nav-link {
+    padding-bottom: 0.5em;
   }
 }/*# sourceMappingURL=style.css.map */

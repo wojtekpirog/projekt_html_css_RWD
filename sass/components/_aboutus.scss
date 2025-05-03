@@ -1,0 +1,23 @@
+.about {
+  i {
+    margin: 1em 0 .5em;
+    font-size: 30px;
+  }
+
+  &__card {
+    &-title {
+      margin-bottom: .5em; // 9.5px
+      font-size: 1.9rem; // 19px
+    }
+
+    &-description {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (hover: hover) {
+    .text-hover-primary:hover {
+      color: var(--bs-primary);
+    }
+  }
+}
