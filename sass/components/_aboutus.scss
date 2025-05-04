@@ -31,4 +31,17 @@
   background-size: cover;
   color: colors.$light;
   z-index: 0;
+
+  &__title {
+    margin-bottom: .5em;
+    font-size: 24px;
+  }
+
+  &__description {
+    margin-top: .5em;
+  }
+
+  i {
+    font-size: 36px;
+  }
 }
