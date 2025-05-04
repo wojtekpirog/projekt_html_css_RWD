@@ -1,5 +1,7 @@
 let navbarParent;
 let navbar;
+let navbarCollapse;
+let allNavLinks;
 
 function main() {
   getElements();
@@ -9,10 +11,15 @@ function main() {
 function getElements() {
   navbarParent = document.querySelector(".navbar").parentElement;
   navbar = navbarParent.querySelector(".navbar");
+  navbarCollapse = navbar.querySelector(".navbar-collapse");
+  allNavLinks = navbar.querySelectorAll(".nav-link");
+
+  console.log(allNavLinks);
 }
 
 function addListeners() {
   window.addEventListener("scroll", handleScroll);
+  allNavLinks.forEach((navLink) => navLink.addEventListener("click", () => navbarCollapse.classList.remove("show")));
 }
 
 function handleScroll() {

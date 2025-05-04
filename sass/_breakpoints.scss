@@ -26,6 +26,11 @@
   .hero_text-header {
     font-size: 3.2rem;
   }
+
+  .platforms {
+    background-image: url("../assets/images/woman-desktop.jpg");
+    background-position: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -45,5 +50,9 @@
     & > .nav-link {
       padding-bottom: .5em;
     }
+  }
+
+  .platforms {
+    background-position: center -100px;
   }
 }
