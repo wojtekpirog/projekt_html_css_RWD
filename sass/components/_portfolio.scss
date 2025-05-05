@@ -1,0 +1,42 @@
+@use "../utils/colors" as colors;
+
+.portfolio {
+  img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 5rem;
+    background-color: colors.$overlay;
+
+    h3 {
+      margin-bottom: .5em;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .carousel-indicators {
+    bottom: 40px;
+  }
+
+  .card-group {
+    display: grid;
+    gap: 1em;
+    text-align: left;
+  }
+
+  .card {
+    border: none;
+  }
+
+  .card-title {
+    font-size: 2rem;
+    font-family: "Primary-semibold";
+  }
+}
