@@ -53,7 +53,7 @@
 body {
   font-size: 1.6rem;
   font-family: var(--primary-font);
-  background-color: hsl(0, 0%, 20%);
+  background-color: hsl(231, 21%, 94%);
 }
 
 .blue-text {
@@ -291,6 +291,35 @@ body {
 .portfolio .card-title {
   font-size: 2rem;
   font-family: "Primary-semibold";
+}
+
+.prices span {
+  font-family: "Primary-semibold";
+}
+.prices h3 {
+  font-size: 2rem;
+}
+.prices i {
+  margin-left: 4px;
+  font-size: 20px;
+  transform: translateY(2px);
+}
+.prices__box {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 4px 4px 4px hsla(0, 0%, 10%, 0.7);
+}
+.prices__box-heading {
+  color: hsl(203, 100%, 51%);
+  font-family: "Primary-medium";
+}
+.prices__box-price {
+  font-size: 2.8rem;
+  font-family: "Primary-bold";
+}
+.prices__box > a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 1.6rem;
 }
 
 @media (min-width: 320px) {

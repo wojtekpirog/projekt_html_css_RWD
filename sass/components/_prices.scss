@@ -1,0 +1,38 @@
+@use "../utils/colors" as colors;
+
+.prices {
+  span {
+    font-family: "Primary-semibold";
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  i {
+    margin-left: 4px;
+    font-size: 20px;
+    transform: translateY(2px);
+  }
+
+  &__box {
+    background-color: colors.$white;
+    box-shadow: 4px 4px 4px colors.$overlay;
+
+    &-heading {
+      color: colors.$lightblue;
+      font-family: "Primary-medium";
+    }
+
+    &-price {
+      font-size: 2.8rem;
+      font-family: "Primary-bold";
+    }
+
+    & > a {
+      display: inline-block;
+      padding: .5em 1em;
+      font-size: 1.6rem;
+    }
+  }
+}
