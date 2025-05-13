@@ -333,6 +333,21 @@ body {
   }
 }
 
+.team {
+  position: relative;
+  background-image: url("../assets/images/team/background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.team .section-title {
+  color: hsl(0, 0%, 80%);
+}
+.team .overlay {
+  z-index: -1;
+}
+
 @media (min-width: 320px) {
   :root {
     scroll-padding-top: 70px;

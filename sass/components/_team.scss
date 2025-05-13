@@ -1,0 +1,18 @@
+@use "../utils/colors" as colors;
+
+.team {
+  position: relative;
+  background-image: url("../assets/images/team/background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1;
+
+  .section-title {
+    color: colors.$light;
+  }
+
+  .overlay {
+    z-index: -1;
+  }
+}
