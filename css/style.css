@@ -293,33 +293,44 @@ body {
   font-family: "Primary-semibold";
 }
 
-.prices span {
-  font-family: "Primary-semibold";
-}
-.prices h3 {
-  font-size: 2rem;
-}
-.prices i {
-  margin-left: 4px;
-  font-size: 20px;
-  transform: translateY(2px);
-}
 .prices__box {
+  margin: 1em 0;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 4px 4px 4px hsla(0, 0%, 10%, 0.7);
+  transition: transform 200ms ease-in-out;
 }
 .prices__box-heading {
   color: hsl(203, 100%, 51%);
-  font-family: "Primary-medium";
+  font-family: "Primary-semibold";
+}
+.prices__box-line {
+  width: 80%;
+  margin: 0 auto 1em;
 }
 .prices__box-price {
   font-size: 2.8rem;
   font-family: "Primary-bold";
 }
+.prices__box span {
+  font-family: "Primary-semibold";
+}
+.prices__box > h3 {
+  font-size: 2rem;
+}
+.prices__box i {
+  padding: 0 0.15em;
+  font-size: 2.2rem;
+  transform: translateY(2px);
+}
 .prices__box > a {
   display: inline-block;
   padding: 0.5em 1em;
   font-size: 1.6rem;
+}
+@media (hover: hover) {
+  .prices__box:hover {
+    transform: scale(1.05);
+  }
 }
 
 @media (min-width: 320px) {

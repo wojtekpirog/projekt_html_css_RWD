@@ -13,8 +13,6 @@ function getElements() {
   navbar = navbarParent.querySelector(".navbar");
   navbarCollapse = navbar.querySelector(".navbar-collapse");
   allNavLinks = navbar.querySelectorAll(".nav-link");
-
-  console.log(allNavLinks);
 }
 
 function addListeners() {
