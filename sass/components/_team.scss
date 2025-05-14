@@ -16,3 +16,20 @@
     z-index: -1;
   }
 }
+
+.achievments {
+  i {
+    font-size: 4.2rem;
+    color: colors.$white;
+    text-shadow: 0 0 4px colors.$darkbg;
+  }
+
+  &__value {
+    font-size: 2rem;
+    font-family: "Primary-medium";
+  }
+
+  &__label {
+    text-transform: uppercase;
+  }
+}

@@ -348,6 +348,19 @@ body {
   z-index: -1;
 }
 
+.achievments i {
+  font-size: 4.2rem;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 0 0 4px hsl(0, 0%, 20%);
+}
+.achievments__value {
+  font-size: 2rem;
+  font-family: "Primary-medium";
+}
+.achievments__label {
+  text-transform: uppercase;
+}
+
 @media (min-width: 320px) {
   :root {
     scroll-padding-top: 70px;
