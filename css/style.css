@@ -85,6 +85,7 @@ body {
 
 .section-title {
   padding-bottom: 0.25em;
+  font-size: 2.2rem;
   font-family: "Primary-semibold";
   text-align: center;
   text-transform: uppercase;
@@ -95,6 +96,9 @@ body {
   width: 60px;
   height: 4px;
   background-color: hsl(203, 100%, 51%);
+}
+.section-underline.has-overlay {
+  background-color: hsl(0, 0%, 80%);
 }
 
 .navbar {
@@ -344,9 +348,6 @@ body {
 .team .section-title {
   color: hsl(0, 0%, 80%);
 }
-.team .overlay {
-  z-index: -1;
-}
 
 .achievments i {
   font-size: 4.2rem;
@@ -359,6 +360,44 @@ body {
 }
 .achievments__label {
   text-transform: uppercase;
+}
+
+.contact {
+  position: relative;
+  background-image: url("../assets/images/contact-mobile.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: hsl(0, 0%, 80%);
+  z-index: 1;
+}
+.contact i {
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 80%);
+  transition: color 200ms linear;
+}
+@media (hover: hover) {
+  .contact i:hover {
+    color: hsl(203, 100%, 51%);
+  }
+}
+.contact__item-title {
+  margin-bottom: 0.75em;
+  font-size: 2.4rem;
+  font-family: "Primary-semibold";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact__item-info {
+  padding: 0.5em 0;
+  color: hsl(0, 0%, 100%);
+}
+.contact__item-socials {
+  display: flex;
+  justify-content: center;
+}
+.contact .overlay {
+  background-color: hsla(0, 0%, 10%, 0.85);
 }
 
 @media (min-width: 320px) {
@@ -376,6 +415,9 @@ body {
   }
 }
 @media (min-width: 576px) {
+  .section-title {
+    font-size: 3.2rem;
+  }
   .hero {
     background-image: url("../../assets/images/hero-image-desktop.jpg");
   }

@@ -29,6 +29,7 @@
 
 .section-title {
   padding-bottom: .25em;
+  font-size: 2.2rem;
   font-family: "Primary-semibold";
   text-align: center;
   text-transform: uppercase;
@@ -39,4 +40,8 @@
   width: 60px;
   height: 4px;
   background-color: colors.$lightblue;
+
+  &.has-overlay {
+    background-color: colors.$light;
+  }
 }

@@ -11,10 +11,6 @@
   .section-title {
     color: colors.$light;
   }
-
-  .overlay {
-    z-index: -1;
-  }
 }
 
 .achievments {
@@ -31,5 +27,51 @@
 
   &__label {
     text-transform: uppercase;
+  }
+}
+
+.contact {
+  position: relative;
+  background-image: url("../assets/images/contact-mobile.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: colors.$light;
+  z-index: 1;
+
+  i {
+    font-size: 2.4rem;
+    color: colors.$light;
+    transition: color 200ms linear;
+
+    @media (hover: hover) {
+      &:hover {
+        color: colors.$lightblue;
+      }
+    }
+  }
+
+  &__item {
+    &-title {
+      margin-bottom: .75em;
+      font-size: 2.4rem;
+      font-family: "Primary-semibold";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    &-info {
+      padding: .5em 0;
+      color: colors.$white;
+    }
+
+    &-socials {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .overlay {
+    background-color: colors.$shadow-bg;
   }
 }
