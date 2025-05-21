@@ -1,7 +1,7 @@
 $(".team__slider").slick({
   arrows: false,
   speed: 800,
-  // autoplay: true,
+  autoplay: true,
   mobileFirst: true,
   slidesToShow: 1,
   slidesToScroll: 1,

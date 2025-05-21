@@ -2,10 +2,13 @@ let navbarParent;
 let navbar;
 let navbarCollapse;
 let allNavLinks;
+let footerYear;
 
 function main() {
   getElements();
   addListeners();
+  handleScroll();
+  setFooterYear();
 }
 
 function getElements() {
@@ -13,6 +16,7 @@ function getElements() {
   navbar = navbarParent.querySelector(".navbar");
   navbarCollapse = navbar.querySelector(".navbar-collapse");
   allNavLinks = navbar.querySelectorAll(".nav-link");
+  footerYear = document.querySelector(".footer__year");
 }
 
 function addListeners() {
@@ -28,6 +32,11 @@ function handleScroll() {
     navbarParent.classList.remove("shadow-bg");
     navbar.classList.remove("no-padding");
   }
+}
+
+function setFooterYear() {
+  const fullYear = (new Date).getFullYear();
+  footerYear.textContent = fullYear;
 }
 
 document.addEventListener("DOMContentLoaded", main);

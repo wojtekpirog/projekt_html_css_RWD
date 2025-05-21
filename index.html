@@ -7,6 +7,7 @@
   <title>ProGamers | Twoje miejsce w świecie gamingu?</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://kit.fontawesome.com/7aa1ebf341.js" crossorigin="anonymous"></script>
 </head>
@@ -88,7 +89,7 @@
       <div class="hero_overlay"></div>
       <!--  -->
       <a href="#about">
-        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down d-inline-block bounce-top"></i>
       </a>
       <!--  -->
     </div>
@@ -107,37 +108,37 @@
         <!--  -->
         <div class="row">
           <!--  -->
-          <div class="col-sm-6 col-md-4 text-hover-primary">
+          <div class="col-sm-6 col-md-4 text-hover-primary" data-aos="fade-right">
             <div><i class="fa-solid fa-mobile-screen"></i></div>
             <h3 class="about__card-title">Mobile gaming</h3>
             <p class="about__card-description">Tworzymy gry na urządzenia mobilne!</p>
           </div>
           <!--  -->
-          <div class="col-sm-6 col-md-4 text-hover-primary">
+          <div class="col-sm-6 col-md-4 text-hover-primary" data-aos="fade-down" data-aos-delay="200">
             <div><i class="fa-solid fa-desktop"></i></div>
             <h3 class="about__card-title">Desktop gaming</h3>
             <p class="about__card-description">Tworzymy gry na PC!</p>
           </div>
           <!--  -->
-          <div class="col-sm-6 col-md-4 text-hover-primary">
+          <div class="col-sm-6 col-md-4 text-hover-primary" data-aos="fade-left">
             <div><i class="fa-solid fa-file-code"></i></div>
             <h3 class="about__card-title">Najwyższe standardy</h3>
             <p class="about__card-description">Zachowujemy najwyższe standardy podczas pisania kodu!</p>
           </div>
           <!--  -->
-          <div class="col-sm-6 col-md-4 text-hover-primary">
+          <div class="col-sm-6 col-md-4 text-hover-primary" data-aos="fade-right">
             <div><i class="fa-solid fa-paw"></i></div>
             <h3 class="about__card-title">Kochamy zwierzęta!</h3>
             <p class="about__card-description">Wszystkie nasze gry są bezpieczne dla środowiska!</p>
           </div>
           <!--  -->
-          <div class="col-sm-6 col-md-4 text-hover-primary">
+          <div class="col-sm-6 col-md-4 text-hover-primary" data-aos="fade-up" data-aos-delay="200">
             <div><i class="fa-solid fa-burger"></i></div>
             <h3 class="about__card-title">Lubimy dobre jedzenie</h3>
             <p class="about__card-description">Lubimy dobrze zjeść przed przystąpieniem do naszych zadań!</p>
           </div>
           <!--  -->
-          <div class="col-sm-6 col-md-4 text-hover-primary">
+          <div class="col-sm-6 col-md-4 text-hover-primary" data-aos="fade-left">
             <div><i class="fa-solid fa-champagne-glasses"></i></div>
             <h3 class="about__card-title">Świetne relacje</h3>
             <p class="about__card-description">Zachowujemy świetne relacje z naszymi klientami!</p>
@@ -648,13 +649,21 @@
     <!--  -->
   </main>
   <!--  -->
-  <div style="height: 100vh;"></div>
+  <footer class="footer bg-dark text-light py-5 text-center">
+    <!--  -->
+    <div class="container">
+      <p class="mb-0"><small>&copy; <span class="footer__year"></span> | ProGamers - Twoje miejsce w świecie gamingu</small></p>
+    </div>
+    <!--  -->
+  </footer>
   <!--  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="./js/slick.js"></script>
+  <script type="text/javascript" src="./js/aos.js"></script>
   <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

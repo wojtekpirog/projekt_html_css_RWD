@@ -73,13 +73,13 @@
     z-index: -1;
   }
 
-  i.fa-chevron-down {
-    padding: .5em;
+  i.fa-solid.fa-chevron-down {
     position: absolute;
-    bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    bottom: 20px;
+    padding: .5em;
     color: colors.$light;
+    transform: translateX(-50%);
     font-size: 2.6rem;
   }
 }

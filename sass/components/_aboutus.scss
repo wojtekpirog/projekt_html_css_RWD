@@ -1,6 +1,8 @@
 @use "../utils/colors" as colors;
 
 .about {
+  overflow-x: hidden;
+
   i {
     margin: 1em 0 .5em;
     font-size: 30px;
