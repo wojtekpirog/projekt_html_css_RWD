@@ -11,6 +11,14 @@
   .section-title {
     color: colors.$light;
   }
+
+  .swiper-pagination-bullet {
+    background-color: colors.$white;
+    
+    &.swiper-pagination-bullet-active {
+      background-color: colors.$lightblue;
+    }
+  }
 }
 
 .achievments {

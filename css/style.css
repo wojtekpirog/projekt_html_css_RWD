@@ -397,6 +397,12 @@ body {
 .team .section-title {
   color: hsl(0, 0%, 80%);
 }
+.team .swiper-pagination-bullet {
+  background-color: hsl(0, 0%, 100%);
+}
+.team .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: hsl(203, 100%, 51%);
+}
 
 .achievments i {
   font-size: 4.2rem;
